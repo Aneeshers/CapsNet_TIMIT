@@ -382,6 +382,7 @@ class TimitDataset(Dataset):
 
                 phn_fname = os.path.join(dirName, fname)
                 wav_fname = os.path.join(dirName, fname[0:-4] + '.WAV')
+                print('fname: ' + fname + '    wav_fname:  ' + wav_fname)
 
                 _, data = wavfile.read(wav_fname)
 
