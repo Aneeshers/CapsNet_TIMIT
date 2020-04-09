@@ -375,7 +375,7 @@ class TimitDataset(Dataset):
         #MFCC not done yet
         #self.mfccs = []
         self.phones = []
-        for dirName, subdirList, fileList in os.walk(os.path.join(root_dir, traintest)):
+        for dirName, subdirList, fileList in os.walk(os.path.join('data', traintest)):
             for fname in fileList:
                 if not fname.endswith('.phn') and not fname.endswith('.PHN') or (fname.startswith('SA')):
                     continue
